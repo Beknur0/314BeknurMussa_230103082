@@ -1,0 +1,54 @@
+{
+  "github_username": "Beknur0",
+  "gpu_uuid": "GPU-e32b3777-b8b8-221a-94d6-777193bbe2c5",
+  "cpu_signature": "x86_64::Intel(R) Xeon(R) CPU @ 2.00GHz::2",
+  "instance_seed": 17189560884387096906,
+  "mpi_ranks": 4,
+  "node_ranks": 4,
+  "global_shape": [
+    512,
+    512
+  ],
+  "local_interior_shape": [
+    256,
+    256
+  ],
+  "stencil_steps": 300,
+  "dx": 0.001949317738791423,
+  "dt": 6.079754835217588e-07,
+  "dt_max": 7.599693544021985e-07,
+  "kappa_max": 1.249997656075194,
+  "max_diff": 0.0,
+  "gpu_serialized_ms": 905.442196,
+  "gpu_overlapped_ms": 694.268154,
+  "timing_scope": "maximum rank wall time, including halo exchange, synchronization, and energy checkpoints",
+  "energy_definition": "sum(u_interior ** 2) * dx ** 2",
+  "energy_serialized": {
+    "0": 0.27316302250000013,
+    "100": 0.272508198519621,
+    "200": 0.27185501187133826,
+    "300": 0.27120345522365724
+  },
+  "energy_overlapped": {
+    "0": 0.27316302250000013,
+    "100": 0.272508198519621,
+    "200": 0.27185501187133826,
+    "300": 0.27120345522365724
+  },
+  "shm_iterations": 40000000,
+  "shm_operation": "atomic read-modify-write",
+  "shm_stride_seconds": {
+    "1": 1.0793433120002192,
+    "8": 1.035965839000255,
+    "16": 1.0409386229998745
+  },
+  "false_sharing_ratio_stride_1_over_8": 1.041871528352542,
+  "ptx_counts": {
+    "st_shared_f64": 5,
+    "ld_shared_f64": 5,
+    "bar_sync": 1,
+    "st_shared_all": 5,
+    "ld_shared_all": 5
+  },
+  "llvm_static_atomicrmw_count": 9
+}
